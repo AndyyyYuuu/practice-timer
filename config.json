@@ -1,0 +1,80 @@
+{
+    "practices": {
+        "melodic": {
+            "name": "Melody",
+            "time": 60,
+            "sections": [
+                {"type": "Long Tones", "choices": ["Crescendo + decrescendo", "Subtones", "Vibrato", "Adjacent note transitions", "Overtones"], "time": 1.5, "choose": 2},
+                {"type": "Scales (legato)", "choices": ["All 12 minor scales", "All 12 major scales", "All 12 mixolydian scales", "All 12 dorian scales"], "time": null},
+                {"type": "Melody", "choices": ["Play and embellish melody"], "time": 15},
+                {"type": "Improv", "choices": ["Improvise over the melody"], "time": 15},
+                {"type": "Cooldown", "choices": ["Sing a new melody", "Play a new melody"], "time": 10}
+            ]
+        },
+        "harmonic": {
+            "name": "Harmony & Changes",
+            "time": 45,
+            "sections": [
+                {"type": "Warmup", "choices": ["All 12 minor scales", "All 12 major scales", "All 12 mixolydian scales", "All 12 dorian scales"], "choose": 3, "time": null},
+                {"type": "II-V-I", "choices": ["Arpeggiate over minor II-V-I", "Arpeggiate over major II-V-I"], "time": 5},
+                {"type": "Chords", "choices": ["Arpeggiate over chords of a chosen melody 2x"], "time": null},
+                {"type": "Melody", "choices": ["Play and embellish the melody"], "time": 5},
+                {"type": "Improv", "choices": ["Improvise over the melody"], "time": 15}
+            ]
+        },
+        "vocab": {
+            "name": "Vocab & Licks",
+            "time": 60,
+            "sections": [
+                {"type": "Warmup", "choices": ["Vibrato long tones", "All 12 minor scales", "All 12 major scales", "All 12 mixolydian scales", "All 12 dorian scales"], "time": null},
+                {"type": "II-V-I", "choices": ["Improvise phrases over minor II-V-I", "Improvise phrases over major II-V-I"], "time": 5},
+                {"type": "Reading", "choices": ["Play a solo from the Omnibook", "Play a solo from the internet"], "time": 10},
+                {"type": "Lick", "choices": ["Choose a lick from the previous section and practice in all 12 keys"], "time": 10},
+                {"tyoe": "Application", "choices": ["Use the new lick over blues", "Use the new lick over a standard", "Improvise over a standard with only that lick"], "time": 8},
+                {"type": "Cooldown", "choices": ["Free play using new vocab", "Embellish a ballad"], "time": 15}
+            ]
+        },
+        "ear": {
+            "name": "Ear & Feel",
+            "time": 45,
+            "sections": [
+                {"type": "Warmup", "choices": ["Vibrato long tones", "All 12 minor scales", "All 12 major scales", "All 12 mixolydian scales", "All 12 dorian scales"]},
+                {"type": "Sing", "choices": ["Sing over a new tune without seeing the changes"], "time": 7},
+                {"type": "Improv", "choices": ["Improvise over the tune without seeing the changes"], "time": 10},
+                {"type": "Improv", "choices": ["Improvise over the tune while looking at the changes"], "time": 10},
+                {"type": "Listening", "choices": ["Listen to a solo and choose a phrases to play by ear"], "time": 10},
+                {"type": "Cooldown", "choices": ["Sing melodic lines, then play them", "Improvise over a familiar ballad"], "time": 5}
+            ]
+        },
+        "repertoire": {
+            "name": "Repertoire Prep",
+            "time": 45,
+            "sections": [
+                {"type": "Long Tones", "choices": ["Crescendo + decrescendo", "Subtones", "Vibrato", "Adjacent note transitions", "Overtones"], "time": 1.5, "choose": 2},
+                {"type": "Scales (legato)", "choices": ["All 12 minor scales", "All 12 major scales", "All 12 mixolydian scales", "All 12 dorian scales"], "time": null},
+                {"type": "Details", "choices": ["Practice the difficult details in the piece(s)"], "time": 10},
+                {"type": "Listening", "choices": ["Run the piece(s) with a recording"], "time": 20},
+                {"type": "Cooldown", "choices": ["Play and improvise over a familiar tune"], "time": 5}
+            ]
+        },
+        "2h": {
+            "name": "2 Hours of Jazz", 
+            "time": 120,
+            "sections": [
+                {"type": "Long Tones", "choices": ["Crescendo + decrescendo", "Subtones", "Vibrato", "Adjacent note transitions", "Overtones"], "time": 1.5, "choose": 4},
+                {"type": "Scales", "choices": ["Chromatic Scale"], "time": null},
+                {"type": "Scales", "choices": ["All 12 minor scales", "All 12 major scales", "All 12 mixolydian scales", "All 12 dorian scales"], "time": null, "choose": 3},
+                {"type": "II-V-I", "choices": ["Outline minor II-V-I", "Outline major II-V-I"], "time": 5, "choose": 2},
+                {"type": "Melody", "choices": ["Play and embellish a chosen melody"], "time": 15},
+                {"type": "Chords", "choices": ["Arpeggiate over chords of the melody 2x"], "time": null},
+                {"type": "Sing", "choices": ["Sing over the changes"], "time": 7},
+                {"type": "Improv", "choices": ["Improvise over the changes"], "time": 20},
+                {"type": "Break", "choices": ["Take a break", "Chill"], "time": 5}, 
+                {"type": "Reading", "choices": ["Play a solo from the Omnibook", "Play a solo from the internet"], "time": 10},
+                {"type": "Lick", "choices": ["Choose a lick from the previous section and practice in all 12 keys"], "time": 10},
+                {"type": "Application", "choices": ["Use the new lick over blues", "Use the new lick over a standard", "Improvise over a standard with only that lick"], "time": 8},
+                {"type": "Cooldown", "choices": ["Free play using new vocab", "Embellish a ballad", "Sing a new melody"], "time": 15}
+            ]
+        }
+    }
+}
