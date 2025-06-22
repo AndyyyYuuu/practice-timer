@@ -33,6 +33,8 @@ def timer(total_time: float):
             print("\033[F\33[2K\r\033[F\033[F")
             if inp == "s": 
                 return
+            elif inp == "q": 
+                return "q"
             start_time = time.time()
         print(f"\r|{bar(time_now / total_time)}| {int(time_now/60)}:{int(time_now%60):02d}", end='', flush=True)
         time.sleep(0.1)
@@ -46,11 +48,10 @@ def practice(routine_code):
             choices.remove(chosen)
             print(f"{section['type']}: {chosen}")
             if section.get("time", False): 
-                timer(section["time"]*60)
+                if timer(section["time"]*60) == "q": return
             input("\nNext >>>")
     print("PRACTICE COMPLETE!")
     input(">>>")
-    os.system("clear")
 
 def prompt_loop(): 
     while True:
@@ -60,6 +61,8 @@ def prompt_loop():
                 os.system('clear')
                 practice(tuple(CONFIG["practices"].keys())[i])
                 return
+        if inp.strip() == "q": 
+            return "q"
 
 def main(): 
     while True: 
@@ -72,7 +75,8 @@ def main():
             minutes = int(practices_values[i]["time"]%60)
             print(f"[{i+1}] {practices_values[i]['name']} | {str(hours) + 'h' if hours != 0 else ''}{str(minutes) + 'm' if minutes != 0 else ''}")
         print("\n")
-        prompt_loop()
+        if prompt_loop() == "q": 
+            return 0
 
 if __name__=="__main__":
     main()
